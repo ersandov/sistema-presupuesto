@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="SistemaLiquidaciones.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    <link href="Styles/StyleMenu.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <ul class="fancyNav">
+                
+                <li id="li_RegistroGastos" runat="server"><a href="RegistroGastos.aspx">Registro Gastos</a></li>
+                <li id="li_Disponibilidad" runat="server" ><a  href="ConsultarPresupuestoDisponible.aspx">Presupuesto Disponible</a></li>
+                <li id="li_Ampliacion" runat="server"><a href="#">Ampliacion Presupuesto</a></li>
+                <li id="li_CerrarSesion" runat="server">
+                   
+                        <asp:LinkButton ID="LinkSalir" runat="server" onclick="LinkSalir_Click">Salir</asp:LinkButton> </asp:LinkButton> </li>
+            </ul>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
