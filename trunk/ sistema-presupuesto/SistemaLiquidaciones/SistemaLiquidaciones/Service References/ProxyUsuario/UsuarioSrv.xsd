@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LiquidacionServices.BE" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LiquidacionServices.BE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UsuarioBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APELLIDOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CENTROGESTORID" type="xs:int" />
+      <xs:element minOccurs="0" name="CONTRASENA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUARIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUARIOID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioBE" nillable="true" type="tns:UsuarioBE" />
+</xs:schema>

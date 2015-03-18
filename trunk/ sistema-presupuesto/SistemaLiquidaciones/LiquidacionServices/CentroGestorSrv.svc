@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LiquidacionServices.CentroGestorSrv" CodeBehind="CentroGestorSrv.svc.cs" %>

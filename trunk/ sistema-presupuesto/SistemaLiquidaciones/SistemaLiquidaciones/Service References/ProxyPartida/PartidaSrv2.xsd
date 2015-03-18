@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LiquidacionServices.BE" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LiquidacionServices.BE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPartidaBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PartidaBE" nillable="true" type="tns:PartidaBE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPartidaBE" nillable="true" type="tns:ArrayOfPartidaBE" />
+  <xs:complexType name="PartidaBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PARTIDA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARTIDAID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PartidaBE" nillable="true" type="tns:PartidaBE" />
+</xs:schema>

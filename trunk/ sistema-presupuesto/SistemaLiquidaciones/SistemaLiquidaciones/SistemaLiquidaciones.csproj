@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A7B128B-5A5F-41A6-AA86-75704CF1BE3E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaLiquidaciones</RootNamespace>
+    <AssemblyName>SistemaLiquidaciones</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ConsultarPresupuestoDisponible.aspx" />
+    <Content Include="imagenes\delete.png" />
+    <Content Include="imagenes\editar.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Principal.Master" />
+    <None Include="Service References\ProxyCentroGestor\CentroGestorSrv.wsdl" />
+    <None Include="Service References\ProxyCentroGestor\CentroGestorSrv.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyCentroGestor\CentroGestorSrv1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyCentroGestor\CentroGestorSrv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyCentroGestor\SistemaLiquidaciones.ProxyCentroGestor.CentroGestorBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyPartida\PartidaSrv.wsdl" />
+    <None Include="Service References\ProxyPartida\PartidaSrv.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPartida\PartidaSrv1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPartida\PartidaSrv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPartida\SistemaLiquidaciones.ProxyPartida.PartidaBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyPresupuesto\PresupuestoSrv.wsdl" />
+    <None Include="Service References\ProxyPresupuesto\PresupuestoSrv.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPresupuesto\PresupuestoSrv1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPresupuesto\PresupuestoSrv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyPresupuesto\SistemaLiquidaciones.ProxyPresupuesto.PresupuestoBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyUsuario\SistemaLiquidaciones.ProxyUsuario.UsuarioBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyUsuario\UsuarioSrv.disco" />
+    <None Include="Service References\ProxyUsuario\configuration91.svcinfo" />
+    <None Include="Service References\ProxyUsuario\configuration.svcinfo" />
+    <None Include="Service References\ProxyUsuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyPresupuesto\PresupuestoSrv.disco" />
+    <None Include="Service References\ProxyPresupuesto\configuration91.svcinfo" />
+    <None Include="Service References\ProxyPresupuesto\configuration.svcinfo" />
+    <None Include="Service References\ProxyPresupuesto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyCentroGestor\CentroGestorSrv.disco" />
+    <None Include="Service References\ProxyCentroGestor\configuration91.svcinfo" />
+    <None Include="Service References\ProxyCentroGestor\configuration.svcinfo" />
+    <None Include="Service References\ProxyCentroGestor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyPartida\PartidaSrv.disco" />
+    <None Include="Service References\ProxyPartida\configuration91.svcinfo" />
+    <None Include="Service References\ProxyPartida\configuration.svcinfo" />
+    <None Include="Service References\ProxyPartida\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="RegistroGasto.aspx" />
+    <Content Include="Styles\EstiloLogin\animate-custom.css" />
+    <Content Include="Styles\EstiloLogin\demo.css" />
+    <Content Include="Styles\EstiloLogin\style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Style.css" />
+    <Content Include="Styles\StyleGridview.css" />
+    <Content Include="Styles\StyleMenu.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\ProxyUsuario\UsuarioSrv.wsdl" />
+    <None Include="Service References\ProxyUsuario\UsuarioSrv.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyUsuario\UsuarioSrv1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyUsuario\UsuarioSrv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPresupuestoDisponible.aspx.cs">
+      <DependentUpon>ConsultarPresupuestoDisponible.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarPresupuestoDisponible.aspx.designer.cs">
+      <DependentUpon>ConsultarPresupuestoDisponible.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroGasto.aspx.cs">
+      <DependentUpon>RegistroGasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroGasto.aspx.designer.cs">
+      <DependentUpon>RegistroGasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyCentroGestor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyPartida\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyPresupuesto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyUsuario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ProxyCentroGestor\" />
+    <WCFMetadataStorage Include="Service References\ProxyPartida\" />
+    <WCFMetadataStorage Include="Service References\ProxyPresupuesto\" />
+    <WCFMetadataStorage Include="Service References\ProxyUsuario\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
