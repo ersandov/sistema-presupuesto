@@ -54,7 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CentroGestorSrv.svc" />
-    <Content Include="GastoExecidoSrv.svc" />
+    <Content Include="GastoExcedidoSrv.svc" />
+    <Content Include="GastoSrv.svc" />
     <Content Include="PartidaSrv.svc" />
     <Content Include="PresupuestoSrv.svc" />
     <Content Include="Service1.svc" />
@@ -80,11 +81,15 @@
     <Compile Include="DA\PartidaDA.cs" />
     <Compile Include="DA\PresupuestoDA.cs" />
     <Compile Include="DA\UsuarioDA.cs" />
-    <Compile Include="GastoExecidoSrv.svc.cs">
-      <DependentUpon>GastoExecidoSrv.svc</DependentUpon>
+    <Compile Include="GastoExcedidoSrv.svc.cs">
+      <DependentUpon>GastoExcedidoSrv.svc</DependentUpon>
+    </Compile>
+    <Compile Include="GastoSrv.svc.cs">
+      <DependentUpon>GastoSrv.svc</DependentUpon>
     </Compile>
     <Compile Include="ICentroGestorSrv.cs" />
-    <Compile Include="IGastoExecidoSrv.cs" />
+    <Compile Include="IGastoExcedidoSrv.cs" />
+    <Compile Include="IGastoSrv.cs" />
     <Compile Include="IPartidaSrv.cs" />
     <Compile Include="IPresupuestoSrv.cs" />
     <Compile Include="IUsuarioSrv.cs" />
