@@ -13,6 +13,7 @@
     <RootNamespace>LiquidacionServices</RootNamespace>
     <AssemblyName>LiquidacionServices</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CentroGestorSrv.svc" />
+    <Content Include="GastoExecidoSrv.svc" />
     <Content Include="PartidaSrv.svc" />
     <Content Include="PresupuestoSrv.svc" />
     <Content Include="Service1.svc" />
@@ -74,10 +76,15 @@
       <DependentUpon>CentroGestorSrv.svc</DependentUpon>
     </Compile>
     <Compile Include="DA\CentroGestorDA.cs" />
+    <Compile Include="DA\GastoDA.cs" />
     <Compile Include="DA\PartidaDA.cs" />
     <Compile Include="DA\PresupuestoDA.cs" />
     <Compile Include="DA\UsuarioDA.cs" />
+    <Compile Include="GastoExecidoSrv.svc.cs">
+      <DependentUpon>GastoExecidoSrv.svc</DependentUpon>
+    </Compile>
     <Compile Include="ICentroGestorSrv.cs" />
+    <Compile Include="IGastoExecidoSrv.cs" />
     <Compile Include="IPartidaSrv.cs" />
     <Compile Include="IPresupuestoSrv.cs" />
     <Compile Include="IUsuarioSrv.cs" />
