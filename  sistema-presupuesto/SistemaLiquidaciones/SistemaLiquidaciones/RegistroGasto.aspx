@@ -34,7 +34,7 @@
             <td>
                 <asp:DropDownList ID="ddlMes" runat="server" CssClass="caja_texto">
                     <asp:ListItem Value="01">Enero</asp:ListItem>
-                    <asp:ListItem Value="02">Febreo</asp:ListItem>
+                    <asp:ListItem Value="02">Febrero</asp:ListItem>
                     <asp:ListItem Value="03">Marzo</asp:ListItem>
                     <asp:ListItem Value="04">Abril</asp:ListItem>
                     <asp:ListItem Value="05">Mayo</asp:ListItem>
