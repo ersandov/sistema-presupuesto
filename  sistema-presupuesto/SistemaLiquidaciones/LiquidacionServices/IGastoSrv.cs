@@ -14,12 +14,12 @@ namespace LiquidacionServices
     public interface IGastoSrv
     {
         [OperationContract]
-        int RegistrarGasto(BE.PresupuestoBE oPresupuestoBE);
+        int RegistrarGasto(PresupuestoBE oPresupuestoBE);
         [OperationContract]
-        List<BE.PresupuestoBE> ListarGastos(BE.PresupuestoBE oPresupuestoBE);
+        List<BE.PresupuestoBE> ListarGastos(PresupuestoBE oPresupuestoBE);
         [OperationContract]
         int EliminarGasto(int detaPresupuestoId);
         [OperationContract]
-        int ConsultarGastoExcedido(BE.PresupuestoBE oPresupuestoBE);
+        int ConsultarGastoExcedido(PresupuestoBE oPresupuestoBE);
     }
 }
