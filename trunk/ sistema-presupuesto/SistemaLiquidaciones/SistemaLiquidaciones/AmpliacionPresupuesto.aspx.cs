@@ -9,7 +9,7 @@ using System.IO;
 using System.Web.Script.Serialization;
 using LiquidacionServices.BE;
 using System.Text;
-using SistemaLiquidaciones.ProxyGasto;
+//using SistemaLiquidaciones.ProxyGasto;
 
 namespace SistemaLiquidaciones
 {

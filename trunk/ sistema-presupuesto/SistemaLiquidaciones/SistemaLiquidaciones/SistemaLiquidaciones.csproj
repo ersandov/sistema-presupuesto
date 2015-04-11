@@ -326,6 +326,12 @@
     <WCFMetadataStorage Include="Service References\ProxyPresupuesto\" />
     <WCFMetadataStorage Include="Service References\ProxyUsuario\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiquidacionServices\LiquidacionServices.csproj">
+      <Project>{FC5DF50C-27FA-48AF-8C47-F084DEB712BF}</Project>
+      <Name>LiquidacionServices</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
