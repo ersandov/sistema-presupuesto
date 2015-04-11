@@ -1,0 +1,363 @@
+﻿.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+   background-image: linear-gradient(top, #21bdf6 21%, #8dddfa 50%, #fafdfe 70%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.20774419725246, #21bdf6), color-stop(0.5021787, #8dddfa), color-stop(0.7042722934449299, #fafdfe));
+background-image: -moz-linear-gradient(top, #21bdf6 21%, #8dddfa 50%, #fafdfe 70%);
+background-image: -o-linear-gradient(top, #21bdf6 21%, #8dddfa 50%, #fafdfe 70%);
+background-image: -ms-linear-gradient(top, #21bdf6 21%, #8dddfa 50%, #fafdfe 70%);
+	font-family:Verdana;
+    width: 1400px;
+    top: 0px;
+    left: 0px;
+}
+
+.cabecera_pop_up_alert {
+	font-family: Verdana;
+	padding-top: 5px;
+	 padding-left: 5px;
+	
+	font-size: 12px;
+	color: White; /* #D80808;*/
+	font-weight: bold;
+	background-color: #D80808; /*;/*#071427 ;*/
+	text-align:left;
+ 
+}
+
+
+.marcado
+{
+	 background-color:  Aqua;
+	}
+	
+.body
+{
+	 background-color:  #FBFBFB;
+	}
+
+.contenido  {
+	font-family: Verdana;
+	font-size: 11px;
+	color: Black;
+	text-align:left;
+	float:left;
+/*	border: 1px solid #868686;*/
+	/*background-color: #FBFBFB; /*#FBFBFB;*/
+	width: 950px;
+	height:30px;
+}
+
+.cabecera_login {
+	font-family: Verdana;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-bottom: 2px;
+    height:55px;
+	color: Black;
+	font-weight: bold;
+	text-align:left;
+	float:left;
+	text-align:center;
+	/*border: 1px solid #868686;*/
+	/*background-color:   #143382 ;/*#071427;*/
+	
+}
+.cabecera  {
+	font-family: Verdana;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-bottom: 2px;
+    height:24px;
+	color: Black;
+	font-weight: bold;
+	text-align:left;
+	float:left;
+	/*border: 1px solid #868686;*/
+	/*background-color:   #143382 ;/*#071427;*/
+}
+
+.titulo  {
+	font-family: Verdana;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-bottom: 2px;
+    height:24px;
+	color: Black;
+	font-weight: bold;
+	text-align:left;
+	float:left;
+	/*border: 1px solid #868686;*/
+ 
+}
+
+.subtitulo
+{	
+	background-color:  Gray; /*#143382;*/
+	color: White;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	}
+
+		
+.texto {
+	font-family: Verdana;
+	font-size: 11px;
+	color: Black;
+	text-align:left;
+}
+
+.caja_texto {
+	border: 1px solid #868686;
+	width:80%;
+	font-family:Verdana;
+	font-size:11px;
+}
+
+
+.check {
+	font-family:Verdana;
+	font-size:11px;
+}
+
+
+
+.contenido_pop_up {
+	font-family: Verdana;
+	font-size: 11px;
+	color: Black;
+	text-align:left;
+	float:left;
+}
+
+
+.boton
+{
+	/*background-color:#030C5E;*/
+	background-color: #E8E8E8;/*Silver;*/
+	color: Black;
+	border:#9E9E9E 1px solid;
+	text-align:center;
+	width:20px;
+	font-size:11px;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-left: 0px;
+	border-color: #6A6C2C;
+}
+
+.cabecera_pop_up {
+	font-family: Verdana;
+	padding-top: 5px;
+	 padding-left: 5px;
+	
+	font-size: 12px;
+	color: White;
+	font-weight: bold;
+	background-color: #143382;/*#071427 ;*/
+	text-align:left;
+ 
+}
+
+.sub_titulo_pop_up {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+ 	text-align: left;  
+ 	margin-top:10px;
+ 	margin-bottom: 5px;
+    border-bottom-style: inset;
+    float: left;
+}
+
+.cabecera_grilla
+{
+	 font-family: Verdana;
+	 font-size: 10px;
+	 font-weight: bold;
+	 text-align: center;
+	 Color: white;	
+	 background-color:Highlight;/*#081834;*/
+	 text-align:center;
+	 height:21px;
+	 border:#081834 1px solid;
+}
+
+.cabecera_grilla_exp
+{
+	 font-family: Verdana;
+	 font-size: 9px;
+	 font-weight: bold;
+	 text-align: center;
+	 Color: white;	
+	 background-color:#081834;
+	 text-align:center;
+	 height:21px;
+	 border:#081834 1px solid;
+}
+
+.alterno_grilla
+{
+	 font-family: Verdana;
+	 font-size: 9px;
+	 color: Black;
+	 background-color:#B3CDF9 ;/*#DFDFDF;*/
+}
+
+.alterno_grilla_exp
+{
+	 font-family: Verdana;
+	 font-size: 9px;
+	 color: Black;
+	 background-color:#DFDFDF;
+}
+
+.grilla
+{
+	 font-family: Verdana;
+	 font-size: 10px;
+}
+
+.alterno_grilla2
+{
+	 font-family: Verdana;
+	 font-size: 9px;
+}
+
+
+.grilla_exp
+{
+	 font-family: Verdana;
+	 font-size: 9px;
+}
+
+.pie_grilla
+{
+	font-family: Verdana;
+	font-size: 9px;
+	padding-top:5px;
+	text-align: center;
+	color: White;
+	background-color: White;
+}
+
+/*Para  el menú*/
+ .menu    
+ {
+ 	width: 1100px; /*1180px;1112px;*/
+ 	height: 30px !important;    
+ 	background-color: #143382 ;/*#333; */
+ 	font-family:Verdana;
+ 	font-size:10px;
+ 	}
+ .menu ul   
+ {
+ 	 margin: 0; 
+ 	 padding: 0;    
+ 	 float: left;
+	height: 30px !important;
+} 
+ .menu ul li    
+ {
+ 	display: inline;
+ 	
+ 	} 
+ .menu ul li a   
+ {
+ 	float: left; 
+ 	text-decoration: none;   
+ 	 color: white;     
+ 	 padding: 0px 11px;    
+ 	 background-color:#143382 ; /* #333; */
+ 	 height: 30px !important; 
+ 	 } 
+ .menu ul li a:visited    
+ {
+ 	color: White;
+ 	} 
+ .menu ul li a:hover, .menu ul li .current  
+ {
+ 	  color: #fff;   
+ 	  background-color:#0b75b2;
+ }
+ 
+  /*Para UpdateProgress*/
+ .CargandoModalBackground 
+{ 
+    background-color: #FFFFFF;
+    position: absolute ; 
+    top: 0px; 
+    left: 0px; 
+    text-align: center; 
+    vertical-align: middle; 
+    padding-top: 20%; 
+    padding-bottom: 36%; 
+    padding-left: 45%; 
+    padding-right: 51%;
+    font-family:Verdana;
+    font-size:11px;
+    
+}
+/*Para los mensajes*/
+.modalBackground 
+{ 
+    background-color: White;
+    filter: alpha(opacity=70); 
+    opacity: 0.2; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    text-align: center; 
+    vertical-align: middle; 
+    padding-left: 45%; 
+    padding-right: 51%; 
+}
+
+.PanelModal
+{
+    
+    background-color: White;
+    vertical-align: top;
+    padding:0;
+    font-family:Verdana;
+ 	font-size:12px;
+      
+}
+
+
+.modalBackgroundC 
+{ 
+    background-color: White;
+    filter: alpha(opacity=70); 
+    opacity: 0.2; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    text-align: center; 
+    vertical-align: middle; 
+    padding-left: 45%; 
+    padding-right: 51%; 
+    z-index: 2 !important;
+}
+ .CargandoModalBackgroundC 
+{ 
+    background-color: #FFFFFF;
+    position: absolute ; 
+    top: 0px; 
+    left: 0px; 
+    text-align: center; 
+    vertical-align: middle; 
+    padding-top: 20%; 
+    padding-bottom: 36%; 
+    padding-left: 45%; 
+    padding-right: 51%;
+    font-family:Verdana;
+    font-size:11px;
+    z-index: 10158  !important;
+}

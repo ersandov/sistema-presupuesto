@@ -13,12 +13,13 @@
     <form id="form1" runat="server">
      <ul class="fancyNav">
                 
-                <li id="li_RegistroGastos" runat="server"><a href="RegistroGastos.aspx">Registro Gastos</a></li>
+                <li id="li_RegistroGastos" runat="server"><a href="RegistroGasto.aspx">Registro Gastos</a></li>
                 <li id="li_Disponibilidad" runat="server" ><a  href="ConsultarPresupuestoDisponible.aspx">Presupuesto Disponible</a></li>
                 <li id="li_Ampliacion" runat="server"><a href="#">Ampliacion Presupuesto</a></li>
+                <li id="li1" runat="server"><a href="MantenimientoUsuario.aspx">Mantenimiento Usuario</a></li>
                 <li id="li_CerrarSesion" runat="server">
                    
-                        <asp:LinkButton ID="LinkSalir" runat="server" onclick="LinkSalir_Click">Salir</asp:LinkButton> </asp:LinkButton> </li>
+                        <asp:LinkButton ID="LinkSalir" runat="server" onclick="LinkSalir_Click">Salir</asp:LinkButton> </li>
             </ul>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

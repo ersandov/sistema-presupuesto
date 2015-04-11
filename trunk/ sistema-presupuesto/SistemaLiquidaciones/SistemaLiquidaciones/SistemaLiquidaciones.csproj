@@ -13,6 +13,7 @@
     <RootNamespace>SistemaLiquidaciones</RootNamespace>
     <AssemblyName>SistemaLiquidaciones</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28755, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DSconformes\Librerías\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -56,11 +61,25 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Ajax\AjaxControlToolkit.dll" />
+    <Content Include="AmpliacionPresupuesto.aspx" />
     <Content Include="ConsultarPresupuestoDisponible.aspx" />
+    <Content Include="Estilos\colorbox.css" />
+    <Content Include="Estilos\style.css" />
+    <Content Include="imagenes\ampliacion.png" />
     <Content Include="imagenes\delete.png" />
     <Content Include="imagenes\editar.png" />
     <Content Include="Login.aspx" />
+    <Content Include="MantenimientoUsuario.aspx" />
     <Content Include="Principal.Master" />
+    <None Include="Service References\ProxyGasto\GastoSrv.disco" />
+    <None Include="Service References\ProxyGasto\configuration91.svcinfo" />
+    <None Include="Service References\ProxyGasto\configuration.svcinfo" />
+    <None Include="Service References\ProxyGasto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WebForm1.aspx" />
     <None Include="Service References\ProxyCentroGestor\CentroGestorSrv.wsdl" />
     <None Include="Service References\ProxyCentroGestor\CentroGestorSrv.xsd">
       <SubType>Designer</SubType>
@@ -72,6 +91,19 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ProxyCentroGestor\SistemaLiquidaciones.ProxyCentroGestor.CentroGestorBE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyGasto\GastoSrv.wsdl" />
+    <None Include="Service References\ProxyGasto\GastoSrv.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyGasto\GastoSrv1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyGasto\GastoSrv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyGasto\SistemaLiquidaciones.ProxyGasto.PresupuestoBE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ProxyPartida\PartidaSrv.wsdl" />
@@ -190,6 +222,14 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AjaxControlToolkit.cs" />
+    <Compile Include="AmpliacionPresupuesto.aspx.cs">
+      <DependentUpon>AmpliacionPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmpliacionPresupuesto.aspx.designer.cs">
+      <DependentUpon>AmpliacionPresupuesto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarPresupuestoDisponible.aspx.cs">
       <DependentUpon>ConsultarPresupuestoDisponible.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,6 +247,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MantenimientoUsuario.aspx.cs">
+      <DependentUpon>MantenimientoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoUsuario.aspx.designer.cs">
+      <DependentUpon>MantenimientoUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +270,11 @@
       <DependentUpon>RegistroGasto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service References\ProxyCentroGestor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyGasto\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -249,6 +301,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -262,6 +321,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ProxyCentroGestor\" />
+    <WCFMetadataStorage Include="Service References\ProxyGasto\" />
     <WCFMetadataStorage Include="Service References\ProxyPartida\" />
     <WCFMetadataStorage Include="Service References\ProxyPresupuesto\" />
     <WCFMetadataStorage Include="Service References\ProxyUsuario\" />
