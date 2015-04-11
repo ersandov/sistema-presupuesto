@@ -9,6 +9,7 @@ using System.IO;
 using System.Web.Script.Serialization;
 using LiquidacionServices.BE;
 using System.Text;
+using System.Messaging;
 //using SistemaLiquidaciones.ProxyGasto;
 
 namespace SistemaLiquidaciones
@@ -21,6 +22,20 @@ namespace SistemaLiquidaciones
             {
                 var m = (Principal)this.Master;
                 m.FindControl("li_RegistroGastos").Visible = false;
+                // Leer
+                List<PresupuestoBE> oPresupuestoBEs = new List<PresupuestoBE>();
+                string rutaCola = @".\private$\PExcedidos";
+                if (!MessageQueue.Exists(rutaCola))
+                    MessageQueue.Create(rutaCola);
+                MessageQueue colaSend = new MessageQueue(rutaCola);
+                int z = colaSend.GetAllMessages().Count();
+                for (int i = 1; i <= z; i++)
+                {
+                    colaSend.Formatter = new XmlMessageFormatter(new Type[] { typeof(PresupuestoBE) });
+                    Message mensajeSend = colaSend.Receive();
+                    PresupuestoBE oPresupuestoBE = (PresupuestoBE)mensajeSend.Body;
+                    oPresupuestoBEs.Add(oPresupuestoBE);
+                }
             }
 
         }
