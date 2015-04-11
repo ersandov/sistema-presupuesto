@@ -15,6 +15,11 @@ namespace SistemaLiquidaciones
             {
                 OcultarSubMenu();
                 CargarGrilla();
+                if (!Page.IsPostBack)
+                {
+                    var m = (Principal)this.Master;
+                    m.FindControl("li_RegistroGastos").Visible = false;
+                }
             }
 
         }
