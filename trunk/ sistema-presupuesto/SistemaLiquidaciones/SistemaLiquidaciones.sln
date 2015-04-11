@@ -8,10 +8,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaLiquidaciones", "Sis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidacionServices", "LiquidacionServices\LiquidacionServices.csproj", "{FC5DF50C-27FA-48AF-8C47-F084DEB712BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPresupuesto", "TestPresupuesto\TestPresupuesto.csproj", "{C102760E-2837-4165-90A5-EA890BF39CD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B01DD178-A5A2-4A74-B521-DEF115522066}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SistemaLiquidaciones.vsmdi = SistemaLiquidaciones.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
 		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SistemaLiquidaciones.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +38,10 @@ Global
 		{FC5DF50C-27FA-48AF-8C47-F084DEB712BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC5DF50C-27FA-48AF-8C47-F084DEB712BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC5DF50C-27FA-48AF-8C47-F084DEB712BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C102760E-2837-4165-90A5-EA890BF39CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C102760E-2837-4165-90A5-EA890BF39CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C102760E-2837-4165-90A5-EA890BF39CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C102760E-2837-4165-90A5-EA890BF39CD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
