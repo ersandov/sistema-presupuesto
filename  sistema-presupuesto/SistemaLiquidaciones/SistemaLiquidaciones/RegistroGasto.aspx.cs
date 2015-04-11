@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SistemaLiquidaciones.ProxyGasto;
+using System.Messaging;
 
 
 namespace SistemaLiquidaciones
@@ -147,8 +148,15 @@ namespace SistemaLiquidaciones
                 proxyGasto.RegistrarGasto(oPresupuestoBE);
                 ListarGastos();
                 MpeAmpliarPresupuesto.Hide();
-
-
+                //Mensajeria
+                string rutaColaIn = @".\private$\PExcedidos";
+                if (!MessageQueue.Exists(rutaColaIn))
+                    MessageQueue.Create(rutaColaIn);
+                MessageQueue colaIn = new MessageQueue(rutaColaIn);
+                Message mensajeIn = new Message();
+                mensajeIn.Label = "Partidas excedidas";
+                mensajeIn.Body = oPresupuestoBE;
+                colaIn.Send(mensajeIn);
             }
             catch (Exception)
             {
