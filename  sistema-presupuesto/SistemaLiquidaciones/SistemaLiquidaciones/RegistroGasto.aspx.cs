@@ -147,6 +147,8 @@ namespace SistemaLiquidaciones
                 proxyGasto.RegistrarGasto(oPresupuestoBE);
                 ListarGastos();
                 MpeAmpliarPresupuesto.Hide();
+
+
             }
             catch (Exception)
             {
